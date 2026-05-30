@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function(){
+            try {
+                var saved = localStorage.getItem("web-builder-theme");
+                var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+                var theme = saved || (prefersDark ? "dark" : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+                document.documentElement.classList.toggle("dark", theme === "dark");
+            } catch (e) {}
+        })();
+    </script>
+    <title>Event Spotlight</title>
+    <meta name="description" content="A bright event page for conferences, workshops, and launches.">
+    <link rel="canonical" href="https://sujalkurundwade.github.io/event-spotlight-remix/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Event Spotlight">
+    <meta property="og:description" content="A bright event page for conferences, workshops, and launches.">
+    <meta property="og:url" content="https://sujalkurundwade.github.io/event-spotlight-remix/">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Event Spotlight">
+    <meta name="twitter:description" content="A bright event page for conferences, workshops, and launches.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #ffffff;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        img,
+        video,
+        canvas,
+        svg {
+            max-width: 100%;
+        }
+
+        .published-page-root {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            padding: 24px;
+        }
+
+        @media (max-width: 640px) {
+            .published-page-root {
+                padding: 16px;
+            }
+        }
+
+        * { box-sizing: border-box; } body {margin: 0;}#i09x{font-weight:bold;font-style:italic;text-decoration:underline;}#ik0iy{width:32px;height:32px;border-radius:999px;background:#4f46e5;}#iocgk{font-weight:700;color:#0f172a;}#i850e{display:flex;align-items:center;gap:10px;}#io32i{text-decoration:none;color:inherit;}#i4xvi{text-decoration:none;color:inherit;}#ii664{text-decoration:none;color:inherit;}#i50lp{display:flex;gap:16px;font-size:14px;color:#64748b;}#ixrnn{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;}#ioadx{padding:16px 24px;border-bottom:1px solid #e2e8f0;background:#ffffff;}:root{color-scheme:light;--wb-bg:#ffffff;--wb-surface:#f8fafc;--wb-card:#ffffff;--wb-border:#e4e4e7;--wb-text:#18181b;--wb-muted:#52525b;}html[data-theme="dark"]{color-scheme:dark;--wb-bg:#09090b;--wb-surface:#18181b;--wb-card:#111113;--wb-border:#27272a;--wb-text:#fafafa;--wb-muted:#a1a1aa;}html[data-theme="dark"] body{background-image: !important;background-position-x: !important;background-position-y: !important;background-size: !important;background-repeat: !important;background-attachment: !important;background-origin: !important;background-clip: !important;background-color: !important;color:var(--wb-text) !important;}html[data-theme="dark"] .bg-white{background-color:var(--wb-card) !important;}html[data-theme="dark"] .text-zinc-900, html[data-theme="dark"] .text-black{color:var(--wb-text) !important;}html[data-theme="dark"] .text-zinc-700, html[data-theme="dark"] .text-zinc-600, html[data-theme="dark"] .text-zinc-500{color:var(--wb-muted) !important;}html[data-theme="dark"] .border-zinc-200, html[data-theme="dark"] .border-zinc-300{border-top-color: !important;border-right-color: !important;border-bottom-color: !important;border-left-color: !important;}[data-theme-toggle]{color:var(--wb-text);}#ia05u{width:32px;height:32px;border-radius:999px;background:#4f46e5;}#ideh9{font-weight:700;color:#0f172a;}#iwsri{display:flex;align-items:center;gap:10px;}#ikcpg{text-decoration:none;color:inherit;}#id1x2{text-decoration:none;color:inherit;}#i83se{text-decoration:none;color:inherit;}#ic9cf{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:8px 12px;font-size:14px;font-weight:700;}#idh7o{display:flex;align-items:center;gap:16px;font-size:14px;color:#64748b;}#i3vkh{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;}#iq0jw{padding:16px 24px;border-bottom:1px solid #e2e8f0;background:#ffffff;}
+    </style>
+</head>
+<body>
+    <main class="published-page-root">
+        <body><main class="bg-orange-50 text-stone-950"><section class="mx-auto max-w-5xl px-6 py-16 text-center"><header data-block="navbar" id="ioadx"><nav id="ixrnn"><div id="i850e"><div id="ik0iy"></div><span id="iocgk">Brand</span></div><div id="i50lp"><a href="#" id="io32i">Features</a><a href="#" id="i4xvi">Pricing</a><a href="#" id="ii664">Docs</a></div></nav></header><p class="text-sm font-bold uppercase text-orange-600">June 18 / Online</p><div data-block="navbar-theme"><header id="iq0jw"><nav id="i3vkh"><div id="iwsri"><div id="ia05u"></div><span id="ideh9">Brand</span></div><div id="idh7o"><a href="#" id="ikcpg">Features</a><a href="#" id="id1x2">Pricing</a><a href="#" id="i83se">Docs</a><button type="button" data-theme-toggle="" aria-pressed="false" id="ic9cf"><span data-theme-icon="" aria-hidden="true">☾</span><span data-theme-label="">Dark</span></button></div></nav></header></div><h1 class="mx-auto mt-4 max-w-4xl text-6xl font-black leading-none" id="i09x">parth ummit for modern makers.</h1><p class="mx-auto mt-5 max-w-2xl text-lg text-stone-600">Invite speakers, list sessions, and drive registrations with a warm event-ready layout.</p><div class="mt-10 grid gap-3 rounded-2xl bg-white p-4 text-left shadow-xl md:grid-cols-3"><div class="rounded-xl bg-orange-100 p-5"><b>10:00</b><p>Opening keynote</p></div><div class="rounded-xl bg-yellow-100 p-5"><b>13:00</b><p>Builder workshops</p></div><div class="rounded-xl bg-rose-100 p-5"><b>16:00</b><p>Live demos</p></div></div></section></main></body>
+    </main>
+</body>
+</html>
